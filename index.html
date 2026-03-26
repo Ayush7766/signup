@@ -6,59 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
+<body>
 <section>
     <div class="imgBx">
-        <img src="img\logo.png">
-
+        <img src="img/logo.png" alt="Logo">
     </div>
     <div class="contentBx">
         <div class="formBx">
-            <h2> Sign up</h2>
+            <h2>Sign up</h2>
             <form>
                 <div class="inputBx">
                     <span>User Name</span>
-                    <input type="text" name="">
+                    <input type="text" name="username" required>
                 </div>
 
                 <div class="inputBx">
                     <span>Email</span>
-                    <input type="text" name="">
+                    <input type="email" name="email" required>
                 </div>
 
                 <div class="inputBx">
                     <span>Password</span>
-                    <input type="text" name="">
+                    <input type="password" name="password" required>
                 </div>
 
                 <div class="inputBx">
-                    <span>conformed Password</span>
-                    <input type="text" name="">
-                </div>
-                <div class="inputBx">
-                    <input type="submit" value="Sign up" name="">
+                    <span>Confirm Password</span>
+                    <input type="password" name="confirm_password" required>
                 </div>
 
                 <div class="inputBx">
-                    
-                    <p> Alerady have an Account? <a href="login.html">Login </a> </p>
+                    <input type="submit" value="Sign up">
                 </div>
-            
+
+                <div class="inputBx">
+                    <p>Already have an Account? <a href="login.html">Login</a></p>
+                </div>
             </form>
+
             <h3>Or Connect with</h3>
             <ul class="sci">
-                <li><img src="img\ms.png"></li>
-                <li><img src="img\google.png"></li>
-                <li><img src="img\fb.png"></li>
-                <li><img src="img\linkedin.png"></li>
-
+                <!-- Google Auth -->
+                <li>
+                    <a href="/auth/google">
+                        <img src="img/google.png" alt="Google Login">
+                    </a>
+                </li>
+                <!-- GitHub Auth -->
+                <li>
+                    <a href="/auth/github">
+                        <img src="img/github.png" alt="GitHub Login">
+                    </a>
+                </li>
+                <!-- Optional: Keep other providers -->
+                <li><a href="#"><img src="img/fb.png" alt="Facebook Login"></a></li>
+                <li><a href="#"><img src="img/linkedin.png" alt="LinkedIn Login"></a></li>
             </ul>
         </div>
-
     </div>
 </section>
-<body>
-    
 </body>
 </html>
